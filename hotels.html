@@ -8,10 +8,8 @@
   <body>
     <div class="container">
       <header class="page-header">
-
-        <!-- Логотип — не пункт меню. Размечать отдельным элементом -->
         <div class="sedona-logo">
-          <img src="http://placehold.it/138x70" width="138" height="70" alt="">
+          <a href="index.html"><img src="http://placehold.it/138x70" width="138" height="70" alt=""></a>
         </div>
 
         <nav class="main-menu">
@@ -19,7 +17,7 @@
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
             <li><a href="#">Карта штата</a></li>
-            <li><a href="hotels.html">Гостиницы</a></li>
+            <li><a>Гостиницы</a></li>
           </ul>
         </nav>
       </header>
@@ -27,7 +25,7 @@
       <main>
         <div class="filters-block">
           <form action="#" method="post">
-            <div class="facilities-filter">
+            <div class="filter-column">
               <h2>Инфраструктура:</h2>
 
               <div class="filter-form-field">
@@ -46,7 +44,7 @@
               </div>
             </div>
 
-            <div class="type-filter">
+            <div class="filter-column">
               <h2>Тип жилья:</h2>
 
               <div class="filter-form-field">
@@ -64,74 +62,92 @@
                 <label for="appartments">Аппартаменты</label>
               </div>
             </div>
+
+            <div class="price-range-column">
+              <h2>Стоимость в сутки (р):</h2>
+
+              <div class="filter-form-field">
+                <input type="text" name="min-price" placeholder="от 0">
+                <input type="text" name="max-price" placeholder="до 3000">
+              </div>
+
+              <div class="filter-form-field">
+                <input type="range" min="0" max="3000" step="100" value="2000">
+              </div>
+
+              <button class="filter-form-btn" type="submit">Показать</button>
+            </div>
           </form>
         </div>
 
         <div class="search-result-sort">
-          <b class="sort-count">Найдено: 3</b>
+          <h3 class="sort-count">Найдено: 3</h3>
 
-          <span>Сортировка:</span>
-          <span><a href="#">По цене</a></span>
-          <span><a href="#">По типу</a></span>
-          <span><a href="#">По рейтингу</a></span>
+          <span class="sort-block">Сортировка:</span>
+          <a class="sort-block sort-type-active" href="#">По цене</a></span>
+          <a class="sort-block" href="#">По типу</a></span>
+          <a class="sort-block" href="#">По рейтингу</a></span>
 
-          <a class="arrow-up" href="#"></a>
-          <a class="arrow-down" href="#"></a>
+          <a class="arrow-up" href="#">*</a>
+          <a class="arrow-down arrow-active" href="#">*</a>
         </div>
 
         <section class="search-result">
-          <h3>Amara Resort &amp; Spa</h3>
+          <h3><a href="#">Amara Resort &amp; Spa</a></h3>
 
           <figure><img src="http://placehold.it/135x90" width="135" height="90" alt="Amara Resort &amp; Spa"></figure>
 
-          <span>Гостиница</span>
-          <span>от 3500 р.</span>
-          <a class="btn-details" href="#">Подробнее</a>
-          <a class="book" href="#">Забронировать</a>
-
-          <div class="stars">
-            <span class="star-icon">*</span>
-            <span class="star-icon">*</span>
-            <span class="star-icon">*</span>
-            <span class="star-icon">*</span>
+          <div class="result-column">
+            <span class="result-column-block">Гостиница</span>
+            <span class="result-column-block">от 3500 р.</span>
           </div>
+
+          <div class="result-column">
+            <a class="btn-details" href="#">Подробнее</a>
+            <a class="book" href="#">Забронировать</a>
+          </div>
+
+          <div class="stars"></div>
 
           <div class="rating">Рейтинг: 8.5</div>
         </section>
 
         <section class="search-result">
-          <h3>Desert Quail Inn</h3>
+          <h3><a href="#">Desert Quail Inn</a></h3>
 
           <figure><img src="http://placehold.it/135x90" width="135" height="90" alt="Desert Quail Inn"></figure>
 
-          <span>Мотель</span>
-          <span>от 2000 р.</span>
-          <a class="btn-details" href="#">Подробнее</a>
-          <a class="book" href="#">Забронировать</a>
-
-          <div class="stars">
-            <span class="star-icon">*</span>
-            <span class="star-icon">*</span>
+          <div class="result-column">
+            <span class="result-column-block">Мотель</span>
+            <span class="result-column-block">от 2000 р.</span>
           </div>
+
+          <div class="result-column">
+            <a class="btn-details" href="#">Подробнее</a>
+            <a class="book" href="#">Забронировать</a>
+          </div>
+
+          <div class="stars"></div>
 
           <div class="rating">Рейтинг: 8.9</div>
         </section>
 
         <section class="search-result">
-          <h3>Villas at Poco Diablo</h3>
+          <h3><a href="#">Villas at Poco Diablo</a></h3>
 
           <figure><img src="http://placehold.it/135x90" width="135" height="90" alt="Villas at Poco Diablo"></figure>
 
-          <span>Апартаменты</span>
-          <span>от 4000 р.</span>
-          <a class="btn-details" href="#">Подробнее</a>
-          <a class="book" href="#">Забронировать</a>
-
-          <div class="stars">
-            <span class="star-icon">*</span>
-            <span class="star-icon">*</span>
-            <span class="star-icon">*</span>
+          <div class="result-column">
+            <span class="result-column-block">Апартаменты</span>
+            <span class="result-column-block">от 4000 р.</span>
           </div>
+
+          <div class="result-column">
+            <a class="btn-details" href="#">Подробнее</a>
+            <a class="book" href="#">Забронировать</a>
+          </div>
+
+          <div class="stars"></div>
 
           <div class="rating">Рейтинг: 9.2</div>
         </section>
@@ -139,7 +155,7 @@
 
       <footer class="page-footer">
         <div class="footer-hash text-wrapper">
-          <p>#visitsedona</p>
+          #visitsedona
         </div>
 
         <div class="footer-social text-wrapper">
