@@ -1,10 +1,323 @@
 body {
+  margin: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  background-color: #f2f2f2;
 }
 
-h2, h3 {
+h2,
+h3,
+.footer-hash {
+  margin: 0;
   font-size: 21px;
+  font-weight: bold;
+  line-height: 21px;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.page-header {
+  min-height: 56px;
+}
+
+.main-menu {
+  min-height: 56px;
+  text-align: left;
+}
+
+.main-menu ul {
+  margin: 0;
+}
+
+.main-menu li {
+  display: inline-block;
+  margin-top: 18px;
+}
+
+.main-menu a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000;
+}
+
+.sedona-logo {
+  position: absolute;
+  margin-left: 531px;
+}
+
+.image-block {
+  box-sizing: border-box;
+  width: 1200px;
+  height: 508px;
+  padding-top: 76px;
+  margin-bottom: 60px;
+
+  background-image:
+    url("../img/image-sedona-mask.png"),
+    url("../img/image-sedona.jpg");
+  background-position: bottom center, top center;
+  background-repeat: no-repeat;
+  background-size: 1200px 57px, cover;
+
+  outline: 1px solid skyblue;
+}
+
+.text-image-wrapper {
+  text-align: center;
+}
+
+.page-title-block {
+  min-height: 156px;
+  text-align: center;
+
+  outline: 1px solid skyblue;
+}
+
+.page-title-block h2 {
+  padding-bottom: 31px;
+
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.sedona-reasons {
+  margin-bottom: 57px;
+  text-align: center;
+
+  outline: 1px solid skyblue;
+}
+
+.reason-block,
+.feature-item {
+  float: left;
+  width: 400px;
+}
+
+.reason-block {
+  min-height: 256px;
+}
+
+.reason-block h2 {
+  margin-top: 55px;
+}
+
+.reason-block p {
+  margin-top: 23px;
+}
+
+.feature-item {
+  min-height: 330px;
+}
+
+.feature-item h2 {
+  margin-top: 162px;
+}
+
+.feature-item p {
+  margin-top: 24px;
+}
+
+[class^="reason-image-block"] {
+  width: 800px;
+  min-height: 256px;
+}
+
+.reason-image-block-1 {
+  float: right;
+  background-image: url("../img/image-reason-1.jpg");
+}
+
+.reason-image-block-2 {
+  float: left;
+  background-image: url("../img/image-reason-2.jpg");
+}
+
+.text-stripes::before {
+  content: "— ";
+}
+
+.text-stripes::after {
+  content: " —";
+}
+
+.block-left {
+  float: left;
+}
+
+.block-right {
+  float: right;
+}
+
+.reason-block {
+  background-color: #eeeeee;
+}
+
+.background-blue {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.search-form {
+  text-align: center;
+}
+
+.search-form h2 {
+  font-size: 30px;
+  margin-bottom: -3px;
+}
+
+.search-form p {
+  line-height: 24px;
+}
+
+.search-form-btn {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 568px;
+  height: 86px;
+  margin-top: -8px;
+  padding-top: 32px;
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #766357;
+}
+
+.search-form form {
+  position: absolute;
+  width: 568px;
+  height: 395px;
+  margin-left: 316px;
+
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.map-wrapper {
+  width: 1200px;
+  height: 593px;
+  background-image: url("../img/map-sedona.jpg");
+
+  outline: 1px solid skyblue;
+}
+
+.footer-hash,
+.footer-social,
+.footer-copyright {
+  box-sizing: border-box;
+  float: left;
+  padding-top: 50px;
+  width: 400px;
+  min-height: 120px;
+  text-align: center;
+
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-copyright {
+  padding-top: 40px;
+}
+
+.footer-copyright a {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.filters-block {
+  box-sizing: border-box;
+  width: 1200px;
+  height: 217px;
+  padding-top: 31px;
+  background-image: url("../img/background-filter.jpg");
+
+  outline: 1px solid skyblue;
+}
+
+.filter-column {
+  float: left;
+  width: 255px;
+  padding-left: 72px;
+
+  outline: 1px solid skyblue;
+}
+
+.price-range-column {
+  float: right;
+  padding-right: 72px;
+
+  outline: 1px solid skyblue;
+}
+
+.search-result-sort {
+  box-sizing: border-box;
+  height: 86px;
+  padding-left: 72px;
+  padding-top: 32px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.search-result-sort h3,
+.search-result-sort span,
+.search-result-sort a {
+  display: inline-block;
+}
+
+.search-result {
+  height: 151px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.search-result h3 > a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.search-result h3 {
+  position: relative;
+  top: 28px;
+  left: 238px;
+}
+
+.search-result figure {
+  float: left;
+  margin-top: 10px;
+  margin-left: 72px;;
+}
+
+.result-block {
+  float: left;
+  margin-top: 40px;
+  margin-left: -10px;
+  outline: 1px solid skyblue;
+}
+
+.result-cell,
+.btn-details,
+.book {
+  display: inline-block;
+  width: 110px;
+}
+
+.rating {
+  float: right;
+  margin-top: 74px;
+  margin-right: 86px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
