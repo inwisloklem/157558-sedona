@@ -59,7 +59,7 @@ p {
 .image-block {
   box-sizing: border-box;
   width: 1200px;
-  height: 508px;
+  min-height: 508px;
   padding-top: 76px;
   margin-bottom: 60px;
 
@@ -85,6 +85,8 @@ p {
 }
 
 .page-title-block h2 {
+  width: 450px;
+  margin: 0 auto;
   padding-bottom: 31px;
 
   font-size: 21px;
@@ -109,11 +111,17 @@ p {
 }
 
 .reason-block h2 {
+  margin: 0 auto;
   margin-top: 55px;
+  width: 150px;
+
+  outline: 1px solid sandybrown;
 }
 
 .reason-block p {
+  margin: 0 auto;
   margin-top: 23px;
+  width: 280px;
 }
 
 .feature-item {
@@ -185,7 +193,7 @@ p {
   box-sizing: border-box;
   display: inline-block;
   width: 568px;
-  height: 86px;
+  min-height: 86px;
   margin-top: -8px;
   padding-top: 32px;
   color: #ffffff;
@@ -198,7 +206,7 @@ p {
 .search-form form {
   position: absolute;
   width: 568px;
-  height: 395px;
+  min-height: 395px;
   margin-left: 316px;
 
   background-color: #ffffff;
@@ -238,7 +246,7 @@ p {
 .filters-block {
   box-sizing: border-box;
   width: 1200px;
-  height: 217px;
+  min-height: 217px;
   padding-top: 31px;
   background-image: url("../img/background-filter.jpg");
 
@@ -262,7 +270,7 @@ p {
 
 .search-result-sort {
   box-sizing: border-box;
-  height: 86px;
+  min-height: 86px;
   padding-left: 72px;
   padding-top: 32px;
   border-bottom: 1px solid #e5e5e5;
@@ -285,21 +293,19 @@ p {
 }
 
 .search-result h3 {
-  position: relative;
-  top: 28px;
-  left: 238px;
+  margin-bottom: 10px;
 }
 
 .search-result figure {
   float: left;
-  margin-top: 10px;
-  margin-left: 72px;;
+  margin-top: 30px;
+  margin-left: 72px;
+  margin-right: 32px;
 }
 
 .result-block {
   float: left;
-  margin-top: 40px;
-  margin-left: -10px;
+  margin-top: 30px;
   outline: 1px solid skyblue;
 }
 
@@ -312,7 +318,7 @@ p {
 
 .rating {
   float: right;
-  margin-top: 74px;
+  margin-top: 100px;
   margin-right: 86px;
 }
 
