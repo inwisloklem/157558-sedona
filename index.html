@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic-ext">
   </head>
 
   <body>
@@ -46,17 +48,17 @@
           </div>
 
           <div class="reasons-row">
-            <div class="feature-item hotels">
+            <div class="feature-item icon-hotels">
               <h2>Жилье</h2>
               <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </div>
 
-            <div class="feature-item meal">
+            <div class="feature-item icon-meal">
               <h2>Еда</h2>
               <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </div>
 
-            <div class="feature-item gifts">
+            <div class="feature-item icon-gifts">
               <h2>Сувениры</h2>
               <p>Не только китайского, но и местного производства!</p>
             </div>
@@ -101,27 +103,33 @@
           <a class="search-form-btn" href="#">Поиск гостиницы в Седоне</a>
 
           <form action="#" method="post">
-            <div class="search-form-field">
-              <label for="check-in">Дата заезда:</label>
-              <input type="date" name="check-in" id="check-in">
+            <label for="check-in">Дата заезда:</label>
+            <div class="date-select-wrapper">
+              <input type="text" name="check-in" id="check-in" value="24 апреля 2014">
+              <a class="date-select" href="#">Выбор даты</a>
             </div>
 
-            <div class="search-form-field">
-              <label for="check-out">Дата выезда:</label>
-              <input type="date" name="check-out" id="check-out">
+            <label for="check-out">Дата выезда:</label>
+            <div class="date-select-wrapper">
+              <input type="text" name="check-out" id="check-out" value="4 июля 2014">
+              <a class="date-select" href="#">Выбор даты</a>
             </div>
 
-            <div class="search-form-field">
-              <label for="adults">Взрослые:</label>
-              <input type="number" name="adults" id="adults" value="2" min="1">
-
-              <label for="children">Дети:</label>
-              <input type="number" name="children" id="children" value="0">
+            <label for="adults">Взрослые:</label>
+            <div class="form-counter-wrapper">
+              <a class="form-counter-less" href="#">Меньше</a>
+              <input type="text" name="adults" id="adults" value="2" min="1">
+              <a class="form-counter-more" href="#">Больше</a>
             </div>
 
-            <div class="search-form-field">
-              <button class="submit-btn" type="submit">Найти</button>
+            <label for="children">Дети:</label>
+            <div class="form-counter-wrapper">
+              <a class="form-counter-less" href="#">Меньше</a>
+                <input type="text" name="children" id="children" value="0">
+              <a class="form-counter-more" href="#">Больше</a>
             </div>
+
+            <button class="submit-btn" type="submit">Найти</button>
           </form>
         </section>
 
@@ -132,21 +140,23 @@
       </main>
 
       <footer class="page-footer clearfix">
-        <div class="footer-hash">
-          #visitsedona
-        </div>
+        <div class="footer-wrapper">
+          <div class="footer-hash">
+            #visitsedona
+          </div>
 
-        <div class="footer-social">
-          <a class="social-btn btn-tw" href="#">Twitter</a>
-          <a class="social-btn btn-fb" href="#">Facebook</a>
-          <a class="social-btn btn-youtube" href="#">Youtube</a>
-        </div>
+          <div class="footer-social">
+            <a class="social-btn btn-tw" href="#">Twitter</a>
+            <a class="social-btn btn-fb" href="#">Facebook</a>
+            <a class="social-btn btn-youtube" href="#">Youtube</a>
+          </div>
 
-        <div class="footer-copyright">
-          Website by
-          <a href="https://htmlacademy.ru">
-            <img src="img/logo-htmlacademy.png" width="113" height="39" alt="HTMLAcademy">
-          </a>
+          <div class="footer-copyright">
+            Website by
+            <a class="logo-htmlacademy" href="https://htmlacademy.ru">
+              HTMLAcademy
+            </a>
+          </div>
         </div>
       </footer>
     </div>
