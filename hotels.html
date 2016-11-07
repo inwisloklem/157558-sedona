@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic-ext">
   </head>
 
   <body>
@@ -36,7 +38,7 @@
 
               <div class="filter-form-field">
                 <input type="checkbox" name="facilities[]" id="parking">
-                <label for="parking">Паркинг</label>
+                <label for="parking">Парковка</label>
               </div>
 
               <div class="filter-form-field">
@@ -50,7 +52,7 @@
 
               <div class="filter-form-field">
                 <input type="checkbox" name="accomodation-type[]" id="hotel" checked>
-                <label for="hotel">Отель</label>
+                <label for="hotel">Гостиница</label>
               </div>
 
               <div class="filter-form-field">
@@ -60,20 +62,23 @@
 
               <div class="filter-form-field">
                 <input type="checkbox" name="accomodation-type[]" id="appartments" checked>
-                <label for="appartments">Аппартаменты</label>
+                <label for="appartments">Апартаменты</label>
               </div>
             </div>
 
             <div class="price-range-column">
               <h2>Стоимость в сутки (р):</h2>
 
-              <div class="filter-form-field">
-                <input type="text" name="min-price" placeholder="от 0">
-                <input type="text" name="max-price" placeholder="до 3000">
+              <div class="price-range-field">
+                <input class="range-min-price" type="text" name="min-price" placeholder="от 0">
+                <input class="range-max-price" type="text" name="max-price" placeholder="до 3000">
               </div>
 
-              <div class="filter-form-field">
-                <input type="range" min="0" max="3000" step="100" value="2000">
+              <div class="price-range-slider">
+                  <div class="slider-fullbar"></div>
+                  <div class="slider-bar"></div>
+                  <div class="slider-point slider-min-point"></div>
+                  <div class="slider-point slider-max-point"></div>
               </div>
 
               <button class="filter-form-btn" type="submit">Показать</button>
@@ -84,13 +89,17 @@
         <div class="search-result-sort">
           <h3 class="sort-count">Найдено: 3</h3>
 
-          <span class="sort-block">Сортировка:</span>
-          <a class="sort-block sort-type-active">По цене</a>
-          <a class="sort-block" href="#">По типу</a>
-          <a class="sort-block" href="#">По рейтингу</a>
+          <span class="sort-title">Сортировка:</span>
+          <ul class="sort-list">
+            <li><a class="sort-type-active">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По рейтингу</a></li>
+          </ul>
 
-          <a class="arrow-up" href="#">*</a>
-          <a class="arrow-down arrow-active" href="#">*</a>
+          <div class="arrow-block">
+            <a class="sort-arrow" href="#">▲</a>
+            <a class="sort-arrow arrow-active" href="#">▼</a>
+          </div>
         </div>
 
         <section class="search-result">
@@ -106,12 +115,12 @@
             </div>
             <div class="result-row">
               <a class="btn-details" href="#">Подробнее</a>
-              <a class="book" href="#">Забронировать</a>
+              <a class="btn-book" href="#">Забронировать</a>
             </div>
           </div>
 
-          <div class="stars"></div>
-          <div class="rating">Рейтинг: 8.5</div>
+          <div class="stars">★★★★</div>
+          <div class="rating">Рейтинг: 8,5</div>
         </section>
 
         <section class="search-result">
@@ -127,12 +136,12 @@
             </div>
             <div class="result-row">
               <a class="btn-details" href="#">Подробнее</a>
-              <a class="book" href="#">Забронировать</a>
+              <a class="btn-book" href="#">Забронировать</a>
             </div>
           </div>
 
-          <div class="stars"></div>
-          <div class="rating">Рейтинг: 8.9</div>
+          <div class="stars">★★</div>
+          <div class="rating">Рейтинг: 8,9</div>
         </section>
 
         <section class="search-result">
@@ -148,12 +157,12 @@
             </div>
             <div class="result-row">
               <a class="btn-details" href="#">Подробнее</a>
-              <a class="book" href="#">Забронировать</a>
+              <a class="btn-book" href="#">Забронировать</a>
             </div>
           </div>
 
-          <div class="stars"></div>
-          <div class="rating">Рейтинг: 9.2</div>
+          <div class="stars">★★★</div>
+          <div class="rating">Рейтинг: 9,2</div>
         </section>
       </main>
 
