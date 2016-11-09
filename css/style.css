@@ -39,6 +39,10 @@ img {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
 }
 
+.page-header {
+  position: relative;
+}
+
 .main-menu {
   text-align: left;
 
@@ -46,8 +50,6 @@ img {
 }
 
 .main-menu ul {
-  position: relative;
-
   padding: 0;
 }
 
@@ -55,7 +57,9 @@ img {
   display: inline-block;
 
   width: 20%;
+  min-height: 56px;
 
+  text-align: center;
   vertical-align: baseline;
 }
 
@@ -64,14 +68,11 @@ img {
 }
 
 .main-menu a {
-  display: block;
+  display: inline-block;
 
-  box-sizing: border-box;
-  width: 100%;
-  min-height: 56px;
-  padding-top: 17px;
+  margin-top: 17px;
 
-  text-align: center;
+  vertical-align: baseline;
   text-decoration: none;
 
   color: #000000;
@@ -86,6 +87,19 @@ img {
 
 .main-menu a:active {
   color: #b2b2b2;
+}
+
+.menu-active a {
+  color: #766357;
+  cursor: default;
+}
+
+.menu-active a:hover {
+  color: #604e43;
+}
+
+.menu-active a:active {
+  color: #dbd8d5;
 }
 
 .sedona-logo {
@@ -584,7 +598,7 @@ img {
 }
 
 .sort-title {
-  margin-right: 34px;
+  margin-right: 36px;
 
   font-size: 12px;
 }
@@ -634,8 +648,13 @@ img {
   color: #cccccc;
 }
 
-.sort-list .sort-type-active {
+.sort-list .sort-type-active,
+.sort-list a:hover {
   color: #81b3d2;
+}
+
+.sort-list a:active {
+  color: #000000;
 }
 
 .arrow-block {
@@ -823,7 +842,7 @@ img {
   box-sizing: border-box;
   min-width: 110px;
   min-height: 27px;
-  margin-top: 10px;
+  margin-top: 8px;
   margin-right: 5px;
   padding: 3px 17px;
 
@@ -980,34 +999,6 @@ img {
 .range-min-price:focus,
 .range-max-price:focus {
   outline: none;
-}
-
-.range-min-price::-webkit-input-placeholder,
-.range-max-price::-webkit-input-placeholder {
-  text-align: center;
-
-  color: #ffffff;
-}
-
-.range-min-price:-moz-placeholder,
-.range-max-price:-moz-placeholder {
-  text-align: center;
-
-  color: #ffffff;
-}
-
-.range-min-price::-moz-placeholder,
-.range-max-price::-moz-placeholder {
-  text-align: center;
-
-  color: #ffffff;
-}
-
-.range-min-price:-ms-input-placeholder,
-.range-max-price:-ms-input-placeholder {
-  text-align: center;
-
-  color: #ffffff;
 }
 
 .price-range-slider {
