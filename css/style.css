@@ -1,3 +1,9 @@
+input,
+button,
+body {
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
 body {
   margin: 0;
 
@@ -5,7 +11,6 @@ body {
 
   background-color: #f2f2f2;
 
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
 }
@@ -133,11 +138,9 @@ img {
   padding-top: 76px;
 
   background-color: #5496bd;
-  background-image:
-    url("../img/image-sedona-mask.png"),
-    url("../img/image-sedona.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom center, top center;
+  background:
+    url("../img/image-sedona-mask.png") bottom center no-repeat,
+    url("../img/image-sedona.jpg") top center no-repeat;
   background-size: 1200px 57px, cover;
 }
 
@@ -348,8 +351,6 @@ img {
   z-index: 10;
   left: 50%;
 
-  /*display: none;*/
-
   box-sizing: border-box;
   width: 568px;
   min-height: 395px;
@@ -396,7 +397,6 @@ img {
   outline: none;
   background-color: #f2f2f2;
 
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: bold;
 }
@@ -534,7 +534,6 @@ img {
   outline: none;
   background-color: #81b3d2;
 
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   font-weight: bold;
 }
@@ -552,8 +551,7 @@ img {
   width: 1200px;
   height: 593px;
 
-  background-color: #5496bd;
-  background-image: url("../img/map-sedona.jpg");
+  background: #5496bd url("../img/map-sedona.jpg");
 }
 
 .footer-hash,
@@ -668,7 +666,7 @@ img {
   color: #81b3d2;
 }
 
-.sort-list a:active {
+.sort-list a:active:not(.sort-type-active) {
   color: #000000;
 }
 
@@ -908,8 +906,7 @@ img {
   min-height: 217px;
   padding-top: 28px;
 
-  background-color: #5496bd;
-  background-image: url("../img/background-filter.jpg");
+  background: #5496bd url("../img/background-filter.jpg");
 }
 
 .filter-column {
@@ -1011,8 +1008,6 @@ img {
   color: #ffffff;
   border: none;
   background-color: transparent;
-
-  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 label[for="range-min-price"] {
@@ -1110,8 +1105,6 @@ label[for="range-min-price"] {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-
-  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .filter-form-btn:hover {
