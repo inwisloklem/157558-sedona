@@ -64,10 +64,6 @@ img {
   vertical-align: baseline;
 }
 
-.main-menu li:nth-of-type(2) {
-  margin-right: 20%;
-}
-
 .main-menu a {
   display: inline-block;
 
@@ -82,15 +78,19 @@ img {
   font-weight: bold;
 }
 
-.main-menu li:nth-of-type(5n+1),
-.main-menu li:nth-of-type(5n+2) {
+.main-menu li:nth-of-type(4n+1),
+.main-menu li:nth-of-type(4n+2) {
   padding-left: 72px;
 
   text-align: left;
 }
 
-.main-menu li:nth-of-type(5n+3),
-.main-menu li:nth-of-type(5n+4) {
+.main-menu li:nth-of-type(4n+2) {
+  margin-right: 20%;
+}
+
+.main-menu li:nth-of-type(4n+3),
+.main-menu li:nth-of-type(4n+4) {
   padding-right: 72px;
 
   text-align: right;
@@ -960,25 +960,6 @@ img {
   font-size: 0;
 }
 
-.price-range-field label {
-  position: absolute;
-  top: 50%;
-
-  transform: translateY(-50%);
-
-  font-size: 14px;
-}
-
-.price-range-field label[for="range-min-price"] {
-  left: 35px;
-
-  transform: translateY(-50%);
-}
-
-.price-range-field label[for="range-max-price"] {
-  left: 195px;
-}
-
 .price-range-field::after {
   position: absolute;
   top: 50%;
@@ -995,12 +976,8 @@ img {
   background-color: #ffffff;
 }
 
-#range-min-price,
-#range-max-price,
+.price-range-field,
 .filter-form-btn {
-  padding: 8px 0;
-
-  text-align: center;
   text-transform: uppercase;
 
   color: #ffffff;
@@ -1011,23 +988,38 @@ img {
   font-size: 14px;
 }
 
+.filter-form-btn {
+  padding: 8px 0;
+
+  text-align: center;
+}
+
+.price-range-field {
+  width: 314px;
+  padding: 5px 0;
+
+  text-align: left;
+}
+
 #range-min-price,
 #range-max-price {
-  width: 157px;
+  width: 65px;
+
+  text-transform: uppercase;
+
+  color: #ffffff;
+  border: none;
+  background-color: transparent;
 
   font-family: "PT Sans", "Arial", sans-serif;
 }
 
-#range-min-price {
-  border-right-width: 0;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+label[for="range-min-price"] {
+  margin-left: 65px;
 }
 
-#range-max-price {
-  border-left-width: 0;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+#range-min-price {
+  margin-right: 57px;
 }
 
 #range-min-price:focus,
