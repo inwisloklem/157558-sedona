@@ -15,6 +15,15 @@ body {
   line-height: 21px;
 }
 
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 h2,
 h3,
 .footer-hash {
@@ -25,15 +34,6 @@ h3,
   font-size: 21px;
   font-weight: bold;
   line-height: 21px;
-}
-
-p {
-  margin: 0;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 .container {
@@ -127,6 +127,7 @@ img {
   z-index: 10;
   left: 50%;
 
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
@@ -235,6 +236,7 @@ img {
   display: block;
 
   content: "";
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 
   background-image: url("../img/feature-icons-sprite.png");
@@ -346,20 +348,37 @@ img {
   font-weight: bold;
 }
 
+/*Какая-то криповая анимация получилась.
+Мне не очень нравится как это работает*/
+
 .modal-form {
   position: absolute;
   z-index: 10;
-  left: 50%;
+  left: 316px;
+
+  display: block;
 
   box-sizing: border-box;
   width: 568px;
   min-height: 395px;
   padding: 55px;
 
-  transform: translateX(-50%);
+  -webkit-transition: all 1s linear 0.5s;
+  transition: all 1s linear 0.5s;
+
+  -webkit-transform: translateY(0) scaleY(1);
+  transform: translateY(0) scaleY(1);
+
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
 
   background-color: #ffffff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.modal-form-hide {
+  -webkit-transform: translateY(-100%) scaleY(0);
+  transform: translateY(-100%) scaleY(0);
 }
 
 .modal-form label {
@@ -431,6 +450,7 @@ img {
   height: 38px;
 
   cursor: pointer;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAWCAYAAAAvg9c4AAABUklEQVQ4jbWV0XGEMAxEH5lrgBZowS04JZASuBKghFBCroRQAnz5nxYoIZSQfFgOwhEZJnfZGQa0Xi+WLEMRQiCDBxrgRXEl8A5cgUXxb8AEDNrgKXcEHFAbnAeqjG8MjiKE0ACtNfgHLEBfhBA+iCnMMuDl6pS4klXd2Kf/KnMnpasvxHrd1EAy7lXsxHTIdK3EvZrXXIwU8tUgWVwzQw44LNOVbDfVy3JYOnP374Zl2gKfcnnhRolHib3StGdM74ZV0579zgM8Z/EEFEem1kobYpojsZUg9uMod4RPmubMSku2WpbKxB9oTrXUwHa60r0To1XxqSR5T5umFVvaixg5ZTrLs1NzdsaWqWOr3SwTamK6E/EQVErTkZXAMp3ZPiZpBenMr4rvlH4Hy1R/dRLyI7rws+2+8a/N735VnYdLpj1b0R+BvpAfX8VjficrMH8BlxFZZdnfYywAAAAASUVORK5CYII=);
@@ -525,6 +545,7 @@ img {
   min-height: 58px;
 
   cursor: pointer;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   text-align: center;
   text-transform: uppercase;
@@ -677,6 +698,7 @@ img {
 
   margin-right: 70px;
 
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
@@ -741,13 +763,6 @@ img {
   margin-top: 28px;
 }
 
-.clearfix::after {
-  display: table;
-  clear: both;
-
-  content: "";
-}
-
 .footer-social {
   padding-top: 36px;
 
@@ -782,6 +797,7 @@ img {
   left: 50%;
 
   content: "";
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 
   background-image: url("../img/social-sprite.png");
@@ -968,6 +984,7 @@ img {
   height: 22px;
 
   content: "";
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 
   border-right: 1px solid #ffffff;
@@ -1034,25 +1051,18 @@ label[for="range-min-price"] {
 .slider-fullbar {
   position: absolute;
   bottom: 0;
-  left: 0;
 
-  width: 258px;
+  width: 100%;
+  height: 2px;
 
-  content: "";
-
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .slider-bar {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  width: 80%;
+  height: 2px;
 
-  width: 56px;
-
-  content: "";
-
-  border-bottom: 2px solid #938482;
+  border-bottom: 2px solid #ffffff;
 }
 
 .slider-point {
@@ -1087,6 +1097,7 @@ label[for="range-min-price"] {
   height: 4px;
 
   content: "";
+  -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
 
   border-radius: 50%;
@@ -1135,6 +1146,7 @@ input[type="checkbox"] + label::before {
   height: 22px;
 
   content: "";
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 
   background-image: url("../img/checkbox-sprite.png");
@@ -1186,4 +1198,11 @@ input[type="checkbox"]:checked:disabled + label::before {
 
   color: #666666;
   background-color: #f2f2f2;
+}
+
+.clearfix::after {
+  display: table;
+  clear: both;
+
+  content: "";
 }
