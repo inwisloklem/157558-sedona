@@ -14,12 +14,29 @@ var counterMore = modalForm.querySelectorAll(".form-counter-more");
 var inputs = modalForm.querySelectorAll(".form-counter-wrapper input");
 
 for (var i = 0; i < inputs.length; i++) {
-  counterLess[i].addEventListener("click", function(event) {
+  (function(i) {
+    counterLess[i].addEventListener("click", function(event) {
+      event.preventDefault();
+
+      if (inputs[i].value > 0) {
+        inputs[i].value = --inputs[i].value;
+      }
+    });
+    counterMore[i].addEventListener("click", function(event) {
+      event.preventDefault();
+
+      inputs[i].value = ++inputs[i].value;
+    });
+  }(i));
+}
+
+modalForm.addEventListener("submit", function(event) {
+  if(inputs[0].value < 1) {
     event.preventDefault();
 
-    inputs[i].value = —inputs[i].value;
-  });
-}
+    alert("Необходимо выбрать минимум одного взрослого.")
+  }
+});
 
 function initMap() {
   var locationSedona = {lat: 34.865969, lng: -111.763604};
