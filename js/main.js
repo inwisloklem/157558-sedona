@@ -11,36 +11,15 @@ searchFormBtn.addEventListener("click", function(event) {
 
 var counterLess = modalForm.querySelectorAll(".form-counter-less");
 var counterMore = modalForm.querySelectorAll(".form-counter-more");
-var inputAdults = modalForm.querySelector("input[name=\"adults\"]");
-var inputChildren = modalForm.querySelector("input[name=\"children\"]");
+var inputs = modalForm.querySelectorAll(".form-counter-wrapper input");
 
-counterLess[0].addEventListener("click", function(event) {
-  event.preventDefault();
+for (var i = 0; i < inputs.length; i++) {
+  counterLess[i].addEventListener("click", function(event) {
+    event.preventDefault();
 
-  if (inputAdults.value > 0) {
-    inputAdults.value = --inputAdults.value;
-  }
-});
-
-counterMore[0].addEventListener("click", function(event) {
-  event.preventDefault();
-
-  inputAdults.value = ++inputAdults.value;
-});
-
-counterLess[1].addEventListener("click", function(event) {
-  event.preventDefault();
-
-  if (inputChildren.value > 0) {
-    inputChildren.value = --inputChildren.value;
-  }
-});
-
-counterMore[1].addEventListener("click", function(event) {
-  event.preventDefault();
-
-  inputChildren.value = ++inputChildren.value;
-});
+    inputs[i].value = —inputs[i].value;
+  });
+}
 
 function initMap() {
   var locationSedona = {lat: 34.865969, lng: -111.763604};
