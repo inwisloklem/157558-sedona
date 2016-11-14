@@ -16,7 +16,7 @@ modalForm.addEventListener("submit", function(event) {
   if(inputs[0].value < 1) {
     event.preventDefault();
 
-    alert("Необходимо выбрать минимум одного взрослого.")
+    alert("Необходимо выбрать минимум одного взрослого.");
   }
 });
 
