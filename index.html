@@ -5,17 +5,17 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
 
   <body>
     <div class="container">
-      <header class="page-header">
-        <div class="sedona-logo">
-          <a><img src="img/logo-sedona.png" width="138" height="70" alt=""></a>
-        </div>
-
+      <header>
         <nav class="main-menu">
+          <div class="sedona-logo">
+            <a><img src="img/logo-sedona.png" width="138" height="70" alt=""></a>
+          </div>
+
           <ul>
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
@@ -32,7 +32,7 @@
           </div>
         </div>
 
-        <section class="sedona-reasons clearfix">
+        <section class="sedona-reasons">
           <div class="page-title-block">
             <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
             <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
@@ -104,39 +104,39 @@
 
           <form class="modal-form" action="#" method="post">
             <label for="check-in">Дата заезда:</label>
-            <div class="date-select-wrapper">
+            <p class="date-select-wrapper">
               <input type="text" name="check-in" id="check-in" value="24 апреля 2016">
               <a class="date-select" href="#">Выбор даты</a>
-            </div>
+            </p>
 
             <label for="check-out">Дата выезда:</label>
-            <div class="date-select-wrapper">
+            <p class="date-select-wrapper">
               <input type="text" name="check-out" id="check-out" value="4 июля 2016">
               <a class="date-select" href="#">Выбор даты</a>
-            </div>
+            </p>
 
             <label for="adults">Взрослые:</label>
-            <div class="form-counter-wrapper">
+            <p class="form-counter-wrapper">
               <a class="form-counter-less" href="#">Меньше</a>
               <input type="text" name="adults" id="adults" value="2">
               <a class="form-counter-more" href="#">Больше</a>
-            </div>
+            </p>
 
             <label for="children">Дети:</label>
-            <div class="form-counter-wrapper">
+            <p class="form-counter-wrapper">
               <a class="form-counter-less" href="#">Меньше</a>
                 <input type="text" name="children" id="children" value="0">
               <a class="form-counter-more" href="#">Больше</a>
-            </div>
+            </p>
 
             <button class="submit-btn" type="submit">Найти</button>
           </form>
         </section>
 
-        <div id="map-wrapper"></div>
+        <div class="map-wrapper"></div>
       </main>
 
-      <footer class="page-footer clearfix">
+      <footer class="page-footer">
         <div class="footer-wrapper">
           <div class="footer-hash">
             #visitsedona
@@ -158,6 +158,6 @@
       </footer>
     </div>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>

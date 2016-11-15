@@ -45,7 +45,7 @@ function initMap() {
     disableDefaultUI: true
   };
 
-  var map = new google.maps.Map(document.querySelector("#map-wrapper"), mapOptions);
+  var map = new google.maps.Map(document.querySelector(".map-wrapper"), mapOptions);
 
   var marker = new google.maps.Marker({
     position: locationSedona,

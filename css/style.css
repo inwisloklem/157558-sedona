@@ -44,11 +44,9 @@ h3,
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
 }
 
-.page-header {
-  position: relative;
-}
-
 .main-menu {
+  position: relative;
+
   text-align: left;
 
   font-size: 0;
@@ -131,6 +129,10 @@ h3,
   transform: translateX(-50%);
 }
 
+.sedona-logo a {
+  margin-top: 0;
+}
+
 .image-block {
   box-sizing: border-box;
   width: 1200px;
@@ -168,6 +170,14 @@ h3,
   margin-bottom: 55px;
 
   text-align: center;
+}
+
+.sedona-reasons::after,
+.page-footer::after {
+  display: table;
+  clear: both;
+
+  content: "";
 }
 
 .reason-block,
@@ -322,8 +332,7 @@ h3,
   font-size: 30px;
 }
 
-.search-form-wrapper p {
-  position: relative;
+.page-title-block:last-of-type p {
   margin-bottom: 2px;
 
   font-size: 14px;
@@ -436,7 +445,6 @@ h3,
   position: relative;
 
   display: inline-block;
-
   width: 75%;
 
   vertical-align: baseline;
@@ -459,6 +467,8 @@ h3,
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAWCAYAAAAvg9c4AAABUklEQVQ4jbWV0XGEMAxEH5lrgBZowS04JZASuBKghFBCroRQAnz5nxYoIZSQfFgOwhEZJnfZGQa0Xi+WLEMRQiCDBxrgRXEl8A5cgUXxb8AEDNrgKXcEHFAbnAeqjG8MjiKE0ACtNfgHLEBfhBA+iCnMMuDl6pS4klXd2Kf/KnMnpasvxHrd1EAy7lXsxHTIdK3EvZrXXIwU8tUgWVwzQw44LNOVbDfVy3JYOnP374Zl2gKfcnnhRolHib3StGdM74ZV0579zgM8Z/EEFEem1kobYpojsZUg9uMod4RPmubMSku2WpbKxB9oTrXUwHa60r0To1XxqSR5T5umFVvaixg5ZTrLs1NzdsaWqWOr3SwTamK6E/EQVErTkZXAMp3ZPiZpBenMr4rvlH4Hy1R/dRLyI7rws+2+8a/N735VnYdLpj1b0R+BvpAfX8VjficrMH8BlxFZZdnfYywAAAAASUVORK5CYII=);
   background-repeat: no-repeat;
   background-position: center center;
+
+  font-size: 0;
 }
 
 .date-select:hover {
@@ -497,6 +507,8 @@ h3,
 
   color: #a9a9a9;
   background-color: #f2f2f2;
+
+  font-size: 0;
 }
 
 .form-counter-wrapper:hover > a,
@@ -571,7 +583,7 @@ h3,
   background-color: #5496bd;
 }
 
-#map-wrapper {
+.map-wrapper {
   width: 1200px;
   height: 593px;
 
@@ -591,6 +603,7 @@ h3,
 
   text-align: center;
 
+  background-color: #ffffff;
   background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -947,7 +960,7 @@ h3,
   font-size: 16px;
 }
 
-.filter-form-field {
+.filter-column p {
   margin-bottom: 25px;
 }
 
@@ -1058,7 +1071,7 @@ label[for="range-min-price"] {
   width: 100%;
   height: 2px;
 
-  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 2px solid #918381;
 }
 
 .slider-bar {
@@ -1201,11 +1214,4 @@ input[type="checkbox"]:checked:disabled + label::before {
 
   color: #666666;
   background-color: #f2f2f2;
-}
-
-.clearfix::after {
-  display: table;
-  clear: both;
-
-  content: "";
 }

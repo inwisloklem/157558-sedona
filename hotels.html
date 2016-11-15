@@ -5,17 +5,17 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
 
   <body>
     <div class="container">
-      <header class="page-header">
-        <div class="sedona-logo">
-          <a href="index.html"><img src="img/logo-sedona.png" width="138" height="70" alt=""></a>
-        </div>
-
+      <header>
         <nav class="main-menu">
+          <div class="sedona-logo">
+            <a href="index.html"><img src="img/logo-sedona.png" width="138" height="70" alt=""></a>
+          </div>
+
           <ul>
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
@@ -31,39 +31,39 @@
             <div class="filter-column">
               <h2>Инфраструктура:</h2>
 
-              <div class="filter-form-field">
+              <p>
                 <input id="swimming-pool" type="checkbox" name="facilities[]" checked>
                 <label for="swimming-pool">Бассейн</label>
-              </div>
+              </p>
 
-              <div class="filter-form-field">
+              <p>
                 <input id="parking" type="checkbox" name="facilities[]">
                 <label for="parking">Парковка</label>
-              </div>
+              </p>
 
-              <div class="filter-form-field">
+              <p>
                 <input id="wi-fi" type="checkbox" name="facilities[]">
                 <label for="wi-fi">WI-FI</label>
-              </div>
+              </p>
             </div>
 
             <div class="filter-column">
               <h2>Тип жилья:</h2>
 
-              <div class="filter-form-field">
+              <p>
                 <input id="hotel" type="checkbox" name="accomodation-type[]" checked>
                 <label for="hotel">Гостиница</label>
-              </div>
+              </p>
 
-              <div class="filter-form-field">
+              <p>
                 <input id="motel" type="checkbox" name="accomodation-type[]" checked>
                 <label for="motel">Мотель</label>
-              </div>
+              </p>
 
-              <div class="filter-form-field">
+              <p>
                 <input id="appartments" type="checkbox" name="accomodation-type[]" checked>
                 <label for="appartments">Апартаменты</label>
-              </div>
+              </p>
             </div>
 
             <div class="price-range-column">
@@ -170,7 +170,7 @@
         </section>
       </main>
 
-      <footer class="page-footer clearfix">
+      <footer class="page-footer">
         <div class="footer-wrapper position-static">
           <div class="footer-hash">
             #visitsedona
