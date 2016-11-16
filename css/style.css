@@ -249,7 +249,7 @@ h3,
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 
-  background-image: url("../img/feature-icons-sprite.png");
+  background-image: url("../img/icons-sprite.png");
   background-repeat: no-repeat;
 }
 
@@ -257,7 +257,7 @@ h3,
   width: 75px;
   height: 72px;
 
-  background-position: -5px -5px;
+  background-position: -218px -5px;
 }
 
 .icon-meal::before {
@@ -267,7 +267,7 @@ h3,
   width: 74px;
   height: 70px;
 
-  background-position: -90px -5px;
+  background-position: -303px -5px;
 }
 
 .icon-gifts::before {
@@ -277,7 +277,7 @@ h3,
   width: 64px;
   height: 76px;
 
-  background-position: -174px -5px;
+  background-position: -387px -5px;
 }
 
 [class^="reason-image-block"] {
@@ -621,22 +621,22 @@ h3,
 
   vertical-align: middle;
 
-  background-image: url("../img/htmlacademy-sprite.png");
+  background-image: url("../img/icons-sprite.png");
   background-repeat: no-repeat;
-  background-position: -5px -5px;
+  background-position: -461px -5px;
 
   font-size: 0;
 }
 
 .logo-htmlacademy:hover {
-  background-position: -128px -5px;
+  background-position: -584px -5px;
 }
 
 .logo-htmlacademy:active {
   width: 113px;
   height: 39px;
 
-  background-position: -251px -5px;
+  background-position: -707px -5px;
 }
 
 .sort-count {
@@ -816,7 +816,7 @@ h3,
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 
-  background-image: url("../img/social-sprite.png");
+  background-image: url("../img/icons-sprite.png");
   background-repeat: no-repeat;
 }
 
@@ -828,7 +828,7 @@ h3,
     width: 17px;
     height: 15px;
 
-    background-position: -5px -5px;
+    background-position: -141px -5px;
 }
 
 .btn-fb::before {
@@ -837,14 +837,14 @@ h3,
     width: 10px;
     height: 19px;
 
-    background-position: -32px -5px;
+    background-position: -168px -5px;
 }
 
 .btn-youtube::before {
     width: 20px;
     height: 16px;
 
-    background-position: -52px -5px;
+    background-position: -188px -5px;
 }
 
 .page-footer {
@@ -1165,7 +1165,7 @@ input[type="checkbox"] + label::before {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 
-  background-image: url("../img/checkbox-sprite.png");
+  background-image: url("../img/icons-sprite.png");
   background-repeat: no-repeat;
   background-position: -5px -5px;
 }
